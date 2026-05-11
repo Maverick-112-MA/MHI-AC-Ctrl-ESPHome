@@ -107,4 +107,4 @@ async def set_external_room_temperature_to_code(config, action_id, template_arg,
     var = cg.new_Pvariable(action_id, template_arg, mhi)
     template_ = await cg.templatable(config[CONF_TEMPERATURE], args, float)
     cg.add(var.set_temperature(template_))
-    return va
+    return var
